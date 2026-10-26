@@ -10,6 +10,6 @@ LANCEDB_URI = "data/lancedb"
 TABLE_NAME = "chunks"
 MANIFEST = Path("data/manifest.json")   # file hashes already ingested
 
-CHUNK_MAX_TOKENS = 2048
+CHUNK_MAX_TOKENS = 8192
 EMBED_BATCH_SIZE = 161
-TOP_K = 5
+TOP_K = 10
