@@ -1,0 +1,13 @@
+[Unit]
+Description=RAG API
+After=network.target ollama.service
+Wants=ollama.service
+
+[Service]
+User=jhunt14
+WorkingDirectory=/home/dev/ragapi
+ExecStart=/home/dev/ragapi/.venv/bin/uvicorn main:app --app-dir src --host 127.0.0.1 --port 8000
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
