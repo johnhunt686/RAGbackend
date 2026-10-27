@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "docling>=2.139.0",
     "fastapi>=0.143.1",
+    "httpx>=0.28.1",
     "lancedb>=0.40.0",
     "llama-index-core>=0.14.25",
     "llama-index-embeddings-ollama>=0.10.0",
