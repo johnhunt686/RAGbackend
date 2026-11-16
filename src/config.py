@@ -5,7 +5,7 @@ LLM_MODEL = "qwen2.5:32b"
 EMBED_MODEL = "bge-m3"
 TOKENIZER = "BAAI/bge-m3"        # used by the chunker to count tokens
 
-DOCS_DIR = Path("data/docs")
+DOCS_DIR = Path.home() / "NutritionScannerbackend" / "research"
 LANCEDB_URI = "data/lancedb"
 TABLE_NAME = "chunks"
 MANIFEST = Path("data/manifest.json")   # file hashes already ingested
